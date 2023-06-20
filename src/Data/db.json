@@ -1,0 +1,31 @@
+{
+  "user": [
+    {
+      "id": 6,
+      "name": "sads",
+      "email": "asx",
+      "phone": "456464"
+    },
+    {
+      "name": "45",
+      "email": "sdfsd",
+      "phone": "89",
+      "age": "25",
+      "id": 7
+    },
+    {
+      "name": "3dfdsgdgd",
+      "email": "wesfdsrf",
+      "phone": "dvfsd",
+      "age": 0,
+      "id": 8
+    },
+    {
+      "name": "hvhj",
+      "email": "sdsffd@dsfsd",
+      "phone": "87848545",
+      "age": "25",
+      "id": 9
+    }
+  ]
+}
