@@ -42,7 +42,7 @@ const EditUser = () => {
             <form onSubmit={handlesubmit}>
                 <div className="card">
                     <div className="card-header" style={{ textAlign: 'left' }}>
-                        <h2>Add User</h2>
+                        <h2>Edit User</h2>
                     </div>
                     <div className="card-body" style={{ textAlign: 'left' }}>
                         <div className="row">

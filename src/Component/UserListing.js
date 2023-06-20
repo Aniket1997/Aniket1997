@@ -61,7 +61,7 @@ const UserListing = (props) => {
                                                 <td>{item.phone}</td>
                                                 <td>{item.age}</td>
                                                 <td>
-                                                    <Link to={'/user/edit/' + item.id} className="btn btn-primary">Edit</Link> |
+                                                    <button className="btn btn-primary">Edit</button> 
                                                     <button onClick={() => { handledelete(item.id) }} className="btn btn-danger">Delete</button>
                                                 </td>
                                             </tr>

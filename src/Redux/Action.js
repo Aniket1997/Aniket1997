@@ -14,7 +14,7 @@ export const failRequest=(err)=>{
         payload:err
     }
 }
-export const geUserList=(data)=>{
+export const getUserList=(data)=>{
     return{
         type:GET_USER_LIST,
         payload:data
@@ -50,7 +50,7 @@ export const FetchUserList=()=>{
       //setTimeout(() => {
         axios.get('http://localhost:8080/user').then(res=>{
             const userlist=res.data;
-            dispatch(geUserList(userlist));
+            dispatch(getUserList(userlist));
           }).catch(err=>{
             dispatch(failRequest(err.message))
           })
