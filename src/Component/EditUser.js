@@ -8,7 +8,7 @@ const EditUser = () => {
     const [name, namechange] = useState('');
     const [email, emailchange] = useState('');
     const [phone, phonechange] = useState('');
-    const [role, rolechange] = useState('staff');
+    const [age, agechange] = useState('staff');
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const { code } = useParams();
@@ -18,7 +18,7 @@ const EditUser = () => {
 
     const handlesubmit = (e) => {
         e.preventDefault();
-        const userobj = { id, name, email, phone, role };
+        const userobj = { id, name, email, phone, age };
         dispatch(FunctionUpdateUser(userobj,id));
         navigate('/user');
     }
@@ -33,7 +33,7 @@ const EditUser = () => {
             namechange(userobj.name);
             emailchange(userobj.email);
             phonechange(userobj.phone);
-            rolechange(userobj.role);
+            agechange(userobj.age);
         }
     }, [userobj])
 
@@ -72,18 +72,16 @@ const EditUser = () => {
                             </div>
                             <div className="col-lg-12">
                                 <div className="form-group">
-                                    <label>Role</label>
-                                    <select value={role || ''} onChange={e => rolechange(e.target.value)} className="form-control">
-                                        <option value="admin">Admin</option>
-                                        <option value="staff">Staff</option>
-                                    </select>
+                                    <label>age</label>
+                                    <input value={age || ''} onChange={e => agechange(e.target.value)} className="form-control"></input>
+                              
                                 </div>
                             </div>
 
                         </div>
                     </div>
                     <div className="card-footer" style={{ textAlign: 'left' }}>
-                        <button className="btn btn-primary" type="submit">Submit</button> |
+                        <button className="btn btn-primary" type="submit">Submit</button> 
                         <Link className="btn btn-danger" to={'/user'}>Back</Link>
                     </div>
 

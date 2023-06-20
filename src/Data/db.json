@@ -1,11 +1,18 @@
 {
   "user": [
     {
-      "name": "Aniket Paul",
-      "email": "aniketpaul1997@gmail.com",
+      "name": "ANIKET",
+      "email": "16r9ju@gmail.com",
+      "phone": "08910827701",
+      "age": 0,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "df",
+      "email": "vdf@fdgdf.com",
       "phone": "8910827701",
-      "age": "25",
-      "id": 1
+      "age": "25"
     }
   ]
 }
